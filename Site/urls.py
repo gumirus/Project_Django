@@ -16,10 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from App.views import *
+from App.views import index_view, page2_view, game_view, link_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', index),
-    path('page2', page2)
+    path('', index_view, name='index'),  # Главная страница
+    path('page2/', page2_view, name='page2'),  # Вторая страница
+    path('game/', game_view, name='game'),  # Страница игры
+    path('link/', link_view, name='link'),  # Страница с ссылкой (если нужно)
 ]

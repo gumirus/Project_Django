@@ -1,9 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Первая страница</title>
+    <title>Game Page</title>
   </head>
   <body>
     <header>
@@ -15,8 +13,10 @@
         </ul>
       </nav>
     </header>
-    <h1>Привет! Это первая страница</h1>
-    <h2>Домашнее задание: #3</h2>
-    <h2>Тема: Введение в Django</h2>
+    <h1>Добро пожаловать на страницу игры</h1>
+    <p>Нажмите на кнопку, чтобы начать игру:</p>
+    <a href="{% url 'game' %}">
+      <button>Перейти к игре</button>
+    </a>
   </body>
 </html>

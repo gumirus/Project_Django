@@ -23,6 +23,10 @@ def index_view(request):
 def page2_view(request):
     return render(request, 'App/page2.html')
 
+# Представление для игры
+def game_page_view(request):
+    return render(request, 'App/game_page.html')
+
 # Представление для ссылки
 def link_view(request):
     return render(request, 'App/link.html')
